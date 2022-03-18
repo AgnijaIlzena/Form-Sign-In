@@ -6,12 +6,12 @@
     --black: #000000;
     --light-grey: #cbcbcb;
     --grey: rgb(128, 128, 128);
-    --font: 'Nunito', sans-serif;
+    --font-nunito: 'Nunito', sans-serif;
 }
 
 body {
     margin: 0;
-    font-family: var(--font);
+    font-family: var(--font-nunito);
     font-size: 16px;  
     height: 100vh;
 }
@@ -24,6 +24,7 @@ main {
 }
 
 /* left page */
+
 .left-page {
     width: 50%; 
 }
@@ -35,71 +36,66 @@ form {
 
 form h1 {
     color: var(--black);
-    font-size: 2.5rem;
-    margin: 0 auto;
+    font-size: 2.3rem;
+    margin: 0;
 }
 
 form p {
     color: var(--grey);
     font-size: 1rem;
-    margin-top: 0;
-}
-
-form input {
-    border: 1px solid var(--light-grey);
-    border-radius: 5px;
-    height: 40px;
-    margin: 5px 0;
+    margin: 0 0 32px 0;
 }
 
 form label {
+    display: block;
     color: var(--black);
+    font-size: 0.85rem;
     font-weight: 600;
-    padding-top: 5px;
-    
+    margin-bottom: 2px;
+    /*padding-top: 5px;  */  
 }
 
-.submit {
+form input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+    padding: 12px;
+   /* height: 40px;*/
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+form .submit {
     background-color: var(--black);
     color: var(--white);
     width: 100%;
-    height: 40px;
+    padding: 12px 0;
     border-radius: 5px;    
-    border: 1px solid var(--black);
-    margin: 5px 0;
-}
+    border: 0;
+}   
 
-.submit-google {
-    background-color: var(--white);
-    color: var(--black);
-    width: 100%;
-    height: 40px;
+form .submit-google a {
     border: 1px solid var(--light-grey);
-    border-radius: 5px;    
-    margin: 5px 0;     
-}
-
-.submit-google div {
-    align-content: center;
-}
-
-.submit-google a {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    color: var(--grey);
-    text-align: center;
+    color: var(--black);
+    font-size: 0.9rem;
+    gap: 10px;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-top: 12px;
+    
 }
-
-.g-img {
-    height: 50%;
+form .submit-google a .g-img {
+    width: 5%;
     padding-right: 5px;
 }
 
-.input-box {
-    display: flex;
-    flex-direction: column;
-}
-
 /* right page */
+
 .right-page {
    width: 50%;
    height: 100%;
@@ -107,7 +103,6 @@ form label {
    background-size: cover;
    position: relative;
 }
-
 
 .right-page div {
    
@@ -122,4 +117,3 @@ form label {
     left: 50%;
     transform: translateX(-50%);
 }
-
