@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-In Form</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <section class="left-page">
-        <div class="inner-container">
-        <h1>Welcome back!</h1>
-        <p>Please enter your details</p>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="left-page">
         <form action="#" method="post">
-            <div class="input-box">
-                <label for="email">Email addresse</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="input-box">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
-            </div>
-            <div>
-               <input type="submit" value="Sign In">
-            </div>
-            <div>
-                <input type="submit" value="Sign in with Googmle">
-            </div>
-        </form>
-    </div>
-    </section>
+          <h1>Welcome back!</h1>
+          <p>Please enter your details</p>
 
-    <section class="right-page">
-        <div>
-            <p>"We/'ve been using Untitled to kick-start every new project and can't imagine working without it."</p>
-            <p>Andi Lane</p>
+          <div class="input-box">
+            <label for="email">Email addresse</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+
+          <button class="submit" type="submit">Sign In</button>
+
+          <div class="submit-google">
+              <a href="#" title="Sign in with Google">
+              <img class="g-img" src="imgs/icon-google.png" alt="google" />
+              Sign in with Google
+            </a>
+          </div>
+        </form>
+      </section>
+
+      <section class="right-page">
+        <div class="presentation">
+          <p>
+            "We've been using Untitled to kick-start every new project and can't
+            imagine working without it."
+          </p>
+          <p>Andi Lane</p>
         </div>
-    </section>
-    
-</body>
+      </section>
+    </main>
+  </body>
 </html>
